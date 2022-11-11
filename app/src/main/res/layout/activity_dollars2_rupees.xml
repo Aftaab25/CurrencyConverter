@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dollars2Rupees">
+
+    <TextView
+        android:id="@+id/header_d2r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="@string/header_d2r"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:fontFamily="@font/aldrich"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_dollar"/>
+
+    <TextView
+        android:id="@+id/tv_dollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/dollars"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/aldrich"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_d2r" />
+
+    <EditText
+        android:id="@+id/ET_dollar_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:hint="@string/amount_in_dollars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dollar"
+        app:layout_constraintBottom_toTopOf="@id/tv_converted_value1"/>
+
+    <TextView
+        android:id="@+id/tv_converted_value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/aldrich"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="@string/tv_value_in_rupees"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_dollar_input" />
+
+    <Button
+        android:id="@+id/btn_convert_d2r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="dollar2rupeeconvert"
+        android:padding="10dp"
+        android:text="@string/btn_dollar_2_rupees"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_converted_value1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

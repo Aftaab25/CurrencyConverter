@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="appName">Currency Converter</string>
+    <string name="convert_dollars_to_rupees_btn1">Convert Dollars to Rupees</string>
+    <string name="convert_dollars_to_rupees_btn2">Convert Rupees to Dollars</string>
+    <string name="dollars">Dollars:</string>
+    <string name="rupees">Rupees:</string>
+    <string name="header_d2r"><u>Dollars 2 Rupees</u></string>
+    <string name="header_r2d"><u>Rupees 2 Dollars</u></string>
+    <string name="amount_in_dollars">Amount in Dollars</string>
+    <string name="amount_in_rupees">Amount in Rupees</string>
+    <string name="tv_value_in_rupees">Rupees\n</string>
+    <string name="tv_value_in_dollars">Dollars\n</string>
+    <string name="btn_dollar_2_rupees">Dollar 2 Rupees</string>
+    <string name="btn_rupee_2_dollar">Rupee 2 Dollar</string>
+</resources>
